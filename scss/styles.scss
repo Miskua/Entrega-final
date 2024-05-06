@@ -1,0 +1,74 @@
+@import"html/reset";
+@import"utilidades/mixin";
+@import"utilidades/variables";
+
+
+
+/* estilo de home*/
+
+.rojo{
+    background-color:$fondo-principal;
+    
+    header{
+        background-color:$fondo-secundario;
+    }
+
+    h1{
+        color:white;
+    }
+}
+
+//estilo general
+
+header{
+    text-align: center;
+    nav{
+        ul{
+            list-style: none;
+            font-size: 15px;
+            text-transform: capitalize;
+            color: blue;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background-color: $fondo-secundario;
+}
+h1{
+    font-weight: 800px;
+    font-size: 60px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px;
+    text-transform: capitalize;
+    color: whitesmoke;
+}
+h2{
+    color: blue;
+    text-transform: capitalize;
+    margin: 30px;
+}
+h3{
+    color: brown;
+}
+footer{
+    margin-top: 30px;
+}
+.quien{
+    div{
+        img{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            margin: 25px;
+            height: 30vh;
+        }
+    }
+    
+}
