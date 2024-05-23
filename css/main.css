@@ -20,6 +20,14 @@
 .rojo h1 {
   color: white;
 }
+.rojo h3 {
+  color: white;
+}
+.rojo main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 header {
   text-align: center;
@@ -57,7 +65,12 @@ h2 {
 }
 
 h3 {
-  color: brown;
+  color: red;
+  text-transform: capitalize;
+}
+
+p {
+  text-transform: capitalize;
 }
 
 footer {
@@ -65,12 +78,25 @@ footer {
 }
 
 .quien div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quien {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  margin: 25px;
-  height: 30vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1, 25%;
+  gap: 30px;
+  margin: 30px 20px;
+  align-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .quien {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
